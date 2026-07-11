@@ -13,8 +13,12 @@ from ui.auth_ui import render_auth
 from ui.diagnosis_ui import render_diagnosis
 from ui.risk_ui import render_risk
 from ui.combined_ui import render_combined
+from src.database.db import init_db
 
 def main():
+    # Initialize the database on startup (crucial for cloud hosting!)
+    init_db()
+    
     st.title("Malaria Diagnosis and Risk Forecasting Framework")
     st.markdown("An Explainable, Multimodal AI Framework")
 
