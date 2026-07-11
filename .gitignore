@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+.env
+
+# Streamlit
+.streamlit/credentials.toml
+
+# Database
+*.db
+*.sqlite3
+malaria_framework.db
+
+# Temp files and user uploads
+temp_cam.jpg
+temp_upload.jpg
+*.tmp
+
+# Mac / Windows System files
+.DS_Store
+Thumbs.db
